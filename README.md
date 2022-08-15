@@ -2,7 +2,7 @@
 
 Projeto de Machine Learning para identificação de futuros players que cancelarão sua assinatua na Gamers Club.
 
-Todo desenvolvimento deste projeto será realizado durante as lives ([twitch.tv/teomewhy](https://www.twitch.tv/teomewhy)), utilizando o Databricks, plataforma Big Data amplamente utilizada no mercado de trabalho.
+Todo desenvolvimento deste projeto será realizado durante as lives ([twitch.tv/teomewhy](https://www.twitch.tv/teomewhy)) ministradas pelo Teo Calvo (https://github.com/TeoCalvo), utilizando o Databricks, plataforma Big Data amplamente utilizada no mercado de trabalho.
 
 ## Motivação
 
