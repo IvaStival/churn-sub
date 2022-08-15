@@ -4,6 +4,8 @@ Projeto de Machine Learning para identificação de futuros players que cancelar
 
 Todo desenvolvimento deste projeto será realizado durante as lives ([twitch.tv/teomewhy](https://www.twitch.tv/teomewhy)) ministradas pelo Teo Calvo (https://github.com/TeoCalvo), utilizando o Databricks, plataforma Big Data amplamente utilizada no mercado de trabalho.
 
+Você pode encontrar o projeto original aqui: https://github.com/TeoMeWhy/churn-sub
+
 ## Motivação
 
 Uma das fontes de receita da GC são as assinaturas de seus players. Com isso, quando há crescimento de churn (cancelamento), é um sinal de que a receita terá queda. Assim, ao identificar os possíveis players que deixarão de assinar, temos oportunidade de retê-los, podendo realizar promoções e adição de benefícios, bem como comunicação de quais funcionalidades ele pode passar a utilizar.
