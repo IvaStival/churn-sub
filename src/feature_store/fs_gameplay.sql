@@ -3,8 +3,13 @@ WITH tb_level AS (
     SELECT idPlayer, vlLevel, dtCreatedAt,
             ROW_NUMBER() over (PARTITION BY idPlayer ORDER BY dtCreatedAt DESC) as rnPlayer
     FROM tb_lobby_stats_player
+<<<<<<< HEAD
     WHERE dtCreatedAt < "{date}"
     AND dtCreatedAt >= DATE("{date}", "-30 days")
+=======
+    WHERE dtCreatedAt < '{date}'
+    AND dtCreatedAt >= DATE('{date}', "-30 days")
+>>>>>>> cdc13312515a0c147cad7bbfb08d792bb4e178a2
 
     ORDER BY idPlayer, dtCreatedAt
 ), 
@@ -29,7 +34,11 @@ tb_player_stats AS (
             1.0*count(DISTINCT case when strftime('%w', dtCreatedAt)+1 = 6 then date(dtCreatedAt) end) / count(DISTINCT date(dtCreatedAt)) as propDia6,
             1.0*count(DISTINCT case when strftime('%w', dtCreatedAt)+1 = 7 then date(dtCreatedAt) end) / count(DISTINCT date(dtCreatedAt)) as propDia7,
 
+<<<<<<< HEAD
             min(JULIANDAY(date("{date}")) - JULIANDAY(date(dtCreatedAt))) as qtRecencia,
+=======
+            min(JULIANDAY(date('{date}')) - JULIANDAY(date(dtCreatedAt))) as qtRecencia,
+>>>>>>> cdc13312515a0c147cad7bbfb08d792bb4e178a2
             avg(flWinner) as winRate,
             avg(1.0 * qtHs / qtKill) as avgHsRate,
             1.0 * sum(qtHs) / sum(qtKill) as vlHsRate,
@@ -76,13 +85,22 @@ tb_player_stats AS (
 
     
     FROM tb_lobby_stats_player
+<<<<<<< HEAD
     WHERE dtCreatedAt < "{date}"
     AND dtCreatedAt >= DATE("{date}", "-30 days")
+=======
+    WHERE dtCreatedAt < '{date}'
+    AND dtCreatedAt >= DATE('{date}', "-30 days")
+>>>>>>> cdc13312515a0c147cad7bbfb08d792bb4e178a2
     GROUP BY idPlayer
 
 )
 
+<<<<<<< HEAD
 SELECT "{date}" as dtRef,
+=======
+SELECT '{date}' as dtRef,
+>>>>>>> cdc13312515a0c147cad7bbfb08d792bb4e178a2
         t1.*,
         t2.vlLevel
 FROM tb_player_stats AS t1
