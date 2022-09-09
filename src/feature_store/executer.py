@@ -9,8 +9,8 @@ import datetime
 from tqdm import tqdm
 
 # %%
-start_date = "2021-12-01"
-end_date = "2022-01-01"
+start_date = "2021-11-01"
+end_date = "2022-02-10"
 
 data_base = "gc_silver"
 fs_names = ["fs_assinatura", "fs_gameplay", "fs_medalha"]

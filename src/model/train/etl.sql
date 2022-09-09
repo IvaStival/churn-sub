@@ -51,6 +51,7 @@ WITH  tb_features as (
             t2.propInferno,
             t2.propVertigo,
             t2.propAncient,
+            t2.propOverpass,
             t2.propDust2,
             t2.propTrain,
             t3.qtMedalhaDist,
